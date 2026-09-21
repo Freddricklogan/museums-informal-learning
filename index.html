@@ -3,219 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Museums & Informal Learning — A Graduate Resource</title>
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Museums &amp; Informal Learning — A Graduate Resource</title>
 <meta name="description" content="An interactive, graduate-level guide to learning in free-choice settings: museums, science centers, zoos, libraries and beyond — the Contextual Model of Learning, the six strands, visitor identity, exhibit design, and evaluation. Authored by Freddrick Logan.">
 <meta name="author" content="Freddrick Logan">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Museums & Informal Learning — A Graduate Resource">
+<meta property="og:title" content="Museums &amp; Informal Learning — A Graduate Resource">
 <meta property="og:description" content="How people learn across a lifetime in the free-choice settings outside the classroom — an interactive graduate-level resource.">
 <meta property="og:url" content="https://freddricklogan.github.io/museums-informal-learning/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2314213d'/%3E%3Cpath d='M16 5 L27 11 L5 11 Z' fill='none' stroke='%2394773d' stroke-width='2' stroke-linejoin='round'/%3E%3Cline x1='9' y1='13' x2='9' y2='23' stroke='%2394773d' stroke-width='2.2'/%3E%3Cline x1='16' y1='13' x2='16' y2='23' stroke='%2394773d' stroke-width='2.2'/%3E%3Cline x1='23' y1='13' x2='23' y2='23' stroke='%2394773d' stroke-width='2.2'/%3E%3Cline x1='6' y1='25' x2='26' y2='25' stroke='%2394773d' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
-<style>
-  /* ==== EXECUTIVE DESIGN SYSTEM — light, editorial, WCAG-aware ==== */
-  :root{
-    --paper:#ffffff;--paper2:#f5f7f9;--paper3:#eef1f5;
-    --navy:#14213d;--navy2:#1c2f4f;
-    --panel:#ffffff;--panel2:#ffffff;--panel3:#f5f7f9;
-    --line:#e3e7ec;--line2:#d1d8e2;
-    --accent:#1e3a5f;--accent2:#2a5486;--accent3:#243f6a;
-    --ink:#14213d;--body:#33404f;--muted:#4c596b;--dim:#5f6c7e;
-    --gold:#94773d;--gold-soft:#f3eddf;
-    --good:#15803d;--warn:#b45309;--bad:#b3261e;
-    --serif:Georgia,'Iowan Old Style','Palatino Linotype','Times New Roman',serif;
-    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,system-ui,sans-serif;
-    --r:12px;--maxw:1060px;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{font-family:var(--sans);color:var(--body);line-height:1.7;background:var(--paper);
-    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-  a{color:var(--accent);text-decoration:none}
-  a:hover{color:var(--accent2);text-decoration:underline}
-  a:focus-visible,button:focus-visible,.tab:focus-visible,.opt:focus-visible,.ck:focus-visible,input:focus-visible{
-    outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-  h1,h2,h3,h4{font-family:var(--serif);color:var(--ink);font-weight:700;letter-spacing:-.01em}
-  h2{font-size:1.75rem;line-height:1.2;margin-bottom:8px}
-  h3{font-size:1.18rem;color:var(--navy);margin-bottom:8px}
-  p{color:var(--body)}
-  .lead{color:var(--muted)}
-  em{color:inherit}
-  .eyebrow{font-family:var(--sans);text-transform:uppercase;letter-spacing:.18em;font-size:.72rem;font-weight:700;color:var(--gold)}
 
-  /* NAV */
-  nav.top{position:sticky;top:0;z-index:50;backdrop-filter:blur(8px);
-    background:rgba(255,255,255,.92);border-bottom:1px solid var(--line)}
-  nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:14px}
-  .logo{display:flex;align-items:center;gap:11px;font-family:var(--serif);font-weight:700;font-size:1.05rem;color:var(--ink);white-space:nowrap}
-  .logo svg{width:30px;height:30px}
-  .navlinks{display:flex;gap:22px;font-size:.85rem;overflow-x:auto}
-  .navlinks a{color:var(--muted);font-weight:600;white-space:nowrap}
-  .navlinks a:hover{color:var(--accent);text-decoration:none}
-  @media(max-width:860px){.navlinks{display:none}}
-
-  /* HERO */
-  header.hero{padding:80px 0 56px;position:relative}
-  .hero .eyebrow{margin-bottom:18px}
-  .hero h1{font-family:var(--serif);font-size:clamp(2.1rem,5vw,3.3rem);line-height:1.1;letter-spacing:-.02em;
-    font-weight:700;color:var(--ink);margin-bottom:22px}
-  .hero p{font-size:1.14rem;color:var(--muted);max-width:660px}
-  .hero .cta{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
-  .btn{padding:12px 22px;border-radius:8px;font-weight:600;font-size:.92rem;cursor:pointer;
-    border:1px solid var(--line2);background:#fff;color:var(--ink);transition:.15s;font-family:var(--sans)}
-  .btn.primary{background:var(--navy);border-color:var(--navy);color:#fff}
-  .btn.primary:hover{background:var(--navy2)}
-  .btn:hover{border-color:var(--accent);color:var(--accent)}
-  .btn.primary:hover{color:#fff}
-  .statrow{display:flex;gap:40px;margin-top:48px;flex-wrap:wrap}
-  .statrow .s .n{font-family:var(--serif);font-size:1.9rem;font-weight:700;color:var(--navy)}
-  .statrow .s .l{font-size:.78rem;color:var(--dim);text-transform:uppercase;letter-spacing:.09em;margin-top:2px}
-
-  /* EXECUTIVE SUMMARY / TL;DR */
-  .exec-summary{background:var(--paper2);border:1px solid var(--line2);border-left:4px solid var(--navy);
-    border-radius:12px;padding:26px 28px;margin:6px 0 0}
-  .exec-summary .tldr{font-family:var(--sans);text-transform:uppercase;letter-spacing:.14em;font-size:.68rem;
-    font-weight:700;color:var(--gold);margin-bottom:8px}
-  .exec-summary h2{font-size:1.2rem;margin-bottom:12px}
-  .exec-summary ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}
-  .exec-summary li{padding-left:22px;position:relative;color:var(--muted);font-size:.96rem}
-  .exec-summary li::before{content:'';position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;
-    background:var(--gold)}
-  .exec-summary li b{color:var(--ink);font-weight:700}
-
-  section{padding:60px 0;border-top:1px solid var(--line)}
-  .sec-head{margin-bottom:34px;max-width:720px}
-  .sec-head .eyebrow{display:block;margin-bottom:12px}
-
-  .grid{display:grid;gap:20px}
-  .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
-  @media(max-width:860px){.g2,.g3,.g4{grid-template-columns:1fr}}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:24px;
-    box-shadow:0 1px 2px rgba(20,33,61,.04)}
-  .card.hoverable{transition:.18s}.card.hoverable:hover{border-color:var(--line2);transform:translateY(-2px);
-    box-shadow:0 14px 34px -20px rgba(20,33,61,.35)}
-  .card .tag{display:inline-block;font-family:var(--sans);font-size:.68rem;font-weight:700;text-transform:uppercase;
-    letter-spacing:.09em;color:var(--gold);background:var(--gold-soft);padding:3px 10px;border-radius:4px;margin-bottom:12px}
-  .card ul{margin:10px 0 0 0;padding-left:18px;color:var(--muted);font-size:.92rem}
-  .card ul li{margin-bottom:6px}
-  .kv{font-size:.92rem;color:var(--muted);margin-top:4px}.kv b{color:var(--ink);font-weight:700}
-
-  /* TABS */
-  .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
-  .tab{padding:10px 16px;border-radius:8px;border:1px solid var(--line2);background:#fff;color:var(--muted);
-    font-weight:600;font-size:.88rem;cursor:pointer;transition:.15s;font-family:var(--sans)}
-  .tab:hover{color:var(--accent);border-color:var(--accent)}
-  .tab.active{background:var(--navy);border-color:var(--navy);color:#fff}
-  .panel{display:none;animation:fade .3s ease}
-  .panel.active{display:block}
-  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-  .panel-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:22px}
-  @media(max-width:860px){.panel-grid{grid-template-columns:1fr}}
-  .facts{list-style:none;padding:0}
-  .facts li{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.92rem}
-  .facts li span:first-child{color:var(--dim);min-width:130px;font-weight:600}
-  .facts li span:last-child{color:var(--ink)}
-
-  /* SELECTOR widget */
-  .selector{background:var(--paper2);border:1px solid var(--line2);border-radius:14px;padding:28px}
-  .q{margin-bottom:20px}
-  .q p{font-weight:600;color:var(--ink);margin-bottom:10px}
-  .opts{display:flex;gap:8px;flex-wrap:wrap}
-  .opt{padding:9px 14px;border-radius:8px;border:1px solid var(--line2);background:#fff;
-    color:var(--muted);cursor:pointer;font-size:.88rem;transition:.15s;font-family:var(--sans)}
-  .opt:hover{border-color:var(--accent);color:var(--accent)}
-  .opt.sel{background:var(--navy);border-color:var(--navy);color:#fff}
-  .result{margin-top:20px;padding:20px;border-radius:10px;background:#fff;border:1px solid var(--line2);border-left:4px solid var(--gold);display:none}
-  .result.show{display:block;animation:fade .3s}
-  .result .big{font-family:var(--serif);font-size:1.25rem;font-weight:700;color:var(--navy);margin-bottom:4px}
-
-  /* STEPPER */
-  .steps{counter-reset:s;display:grid;gap:14px}
-  .step{display:flex;gap:18px;align-items:flex-start;background:#fff;border:1px solid var(--line);
-    border-radius:12px;padding:18px 20px;box-shadow:0 1px 2px rgba(20,33,61,.04)}
-  .step .num{counter-increment:s;flex:0 0 40px;height:40px;width:40px;border-radius:9px;display:grid;place-items:center;
-    background:var(--navy);color:#fff;font-family:var(--serif);font-weight:700}
-  .step .num::before{content:counter(s,decimal-leading-zero)}
-  .step h4{font-size:1.02rem;margin-bottom:3px}
-  .step p{font-size:.92rem;color:var(--muted)}
-
-  /* TABLE */
-  table{width:100%;border-collapse:collapse;font-size:.92rem;margin-top:8px}
-  th{text-align:left;font-family:var(--sans);color:var(--navy);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;
-    padding:12px 13px;border-bottom:2px solid var(--line2)}
-  td{padding:12px 13px;border-bottom:1px solid var(--line);color:var(--muted);vertical-align:top}
-  td b{color:var(--ink);font-weight:700}
-  tbody tr:hover{background:var(--paper2)}
-  .tbl-wrap{overflow-x:auto;border-radius:12px;border:1px solid var(--line);background:#fff}
-
-  /* LADDER / coder */
-  .coder{background:var(--paper2);border:1px solid var(--line2);border-radius:14px;padding:26px}
-  .ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:22px 0 8px;position:relative}
-  @media(max-width:860px){.ladder{grid-template-columns:1fr;gap:10px}}
-  .rung{text-align:center;padding:15px 11px;border:1px solid var(--line);background:#fff;position:relative}
-  .rung:first-child{border-radius:10px 0 0 10px}.rung:last-child{border-radius:0 10px 10px 0}
-  @media(max-width:860px){.rung{border-radius:10px!important}}
-  .rung.on{background:var(--paper3);border-color:var(--navy)}
-  .rung .lbl{font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;color:var(--dim);margin-bottom:6px;font-weight:600}
-  .rung .val{font-size:.9rem;color:var(--ink);font-weight:600;min-height:2.6em}
-  .quote{font-family:var(--serif);font-style:italic;font-size:1.08rem;color:var(--ink);border-left:3px solid var(--gold);
-    padding:6px 18px;margin-bottom:10px;background:transparent}
-
-  /* CHECKLIST scorer */
-  .checklist{display:grid;gap:10px}
-  .ck{display:flex;gap:12px;align-items:flex-start;padding:13px 15px;border:1px solid var(--line);border-radius:10px;
-    cursor:pointer;transition:.15s;background:#fff}
-  .ck:hover{border-color:var(--accent)}
-  .ck.on{background:#f0f6f2;border-color:var(--good)}
-  .ck .box{flex:0 0 20px;height:20px;width:20px;border-radius:5px;border:2px solid var(--dim);display:grid;place-items:center;margin-top:2px;background:#fff}
-  .ck.on .box{background:var(--good);border-color:var(--good)}
-  .ck.on .box::after{content:'✓';color:#fff;font-weight:900;font-size:.75rem}
-  .ck .t b{display:block;color:var(--ink);font-size:.94rem;font-weight:700}
-  .ck .t span{font-size:.86rem;color:var(--muted)}
-  .score{margin-top:22px;padding:22px;border-radius:12px;text-align:center;background:var(--paper2);border:1px solid var(--line2)}
-  .score .meter{height:12px;border-radius:8px;background:var(--paper3);overflow:hidden;margin:14px 0}
-  .score .fill{height:100%;width:0;border-radius:8px;background:linear-gradient(90deg,var(--navy),var(--good));transition:width .4s}
-  .score .verdict{font-family:var(--serif);font-weight:700;font-size:1.15rem}
-
-  .callout{border-left:3px solid var(--gold);background:var(--paper2);border-radius:0 10px 10px 0;padding:16px 20px;margin:18px 0;font-size:.96rem;color:var(--muted)}
-  .callout b{color:var(--ink)}
-
-  .scholars{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-  .chip{font-size:.82rem;padding:6px 12px;border-radius:6px;border:1px solid var(--line2);color:var(--muted);background:#fff}
-
-  footer{border-top:1px solid var(--line);padding:44px 0 56px;margin-top:20px;color:var(--dim);font-size:.9rem;background:var(--paper2)}
-  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:flex-start}
-  footer a{color:var(--accent)}
-  .copyright{width:100%;margin-top:18px;padding-top:16px;border-top:1px solid var(--line);color:var(--dim);font-size:.82rem}
-  .backhub{display:inline-flex;align-items:center;gap:7px;font-size:.85rem;color:var(--muted);margin-bottom:10px}
-  /* ==== Executive memorandum + collapsible sections ==== */
-  .memo-head{font-family:var(--serif);font-weight:700;font-size:1rem;letter-spacing:.16em;text-transform:uppercase;color:var(--navy);border-bottom:1px solid var(--line2);padding-bottom:10px;margin-bottom:12px}
-  .memo-meta{display:grid;gap:5px;margin-bottom:16px}
-  .memo-meta>div{display:flex;gap:10px;font-size:.92rem;color:var(--muted)}
-  .memo-meta span{flex:0 0 auto;min-width:48px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;font-size:.7rem;color:var(--gold);padding-top:3px}
-  .expand-bar{max-width:var(--maxw);margin:0 auto;padding:22px 24px 0;display:flex;justify-content:flex-end}
-  .expand-bar button{font-family:var(--sans);font-size:.8rem;font-weight:600;color:var(--accent);background:#fff;border:1px solid var(--line2);border-radius:7px;padding:8px 14px;cursor:pointer}
-  .expand-bar button:hover{border-color:var(--accent)}
-  .expand-bar button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-  .sec-head.sect-toggle{cursor:pointer;position:relative;padding-right:40px}
-  .sec-head.sect-toggle::after{content:'';position:absolute;right:8px;top:10px;width:12px;height:12px;border-right:2.5px solid var(--navy);border-bottom:2.5px solid var(--navy);transform:rotate(45deg);transition:transform .2s}
-  section.collapsed .sec-head.sect-toggle::after{transform:rotate(-45deg)}
-  .sec-head.sect-toggle:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:4px}
-  section.collapsed .sect-body{display:none}
-  .sect-body{animation:fade .3s ease}
-  /* Centered footer */
-  footer .wrap{flex-direction:column;align-items:center;text-align:center;gap:6px;justify-content:center}
-  .foot-name{font-family:var(--serif);font-weight:700;color:var(--ink);font-size:1.08rem}
-  .foot-title{color:var(--muted);font-size:.92rem;max-width:640px}
-  .foot-links{margin-top:6px;font-size:.9rem}
-  .foot-links a{color:var(--accent);white-space:nowrap}
-  footer .copyright{width:100%;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);color:var(--dim);font-size:.82rem;text-align:center}
-</style>
+<link rel="canonical" href="https://freddricklogan.github.io/museums-informal-learning/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap">
+<link rel="stylesheet" href="src/exec-shell.css">
+<link rel="stylesheet" href="src/lr-kit.css">
+<link rel="stylesheet" href="src/page.css">
 </head>
 <body>
 
-<nav class="top"><div class="wrap">
+<nav class="top" aria-label="Sections"><div class="wrap">
   <div class="logo">
     <svg viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#14213d"/><path d="M16 5 L27 11 L5 11 Z" fill="none" stroke="#94773d" stroke-width="2" stroke-linejoin="round"/><line x1="9" y1="13" x2="9" y2="23" stroke="#94773d" stroke-width="2.2"/><line x1="16" y1="13" x2="16" y2="23" stroke="#94773d" stroke-width="2.2"/><line x1="23" y1="13" x2="23" y2="23" stroke="#94773d" stroke-width="2.2"/><line x1="6" y1="25" x2="26" y2="25" stroke="#94773d" stroke-width="2.4" stroke-linecap="round"/></svg>
     Museums &amp; Informal Learning
@@ -235,8 +44,9 @@
   </div>
 </div></nav>
 
+<main>
 <header class="hero"><div class="wrap">
-  <a class="backhub" href="../resources/">← Educational Leadership &amp; Research Resources</a>
+  <a class="backhub" href="https://freddricklogan.github.io/resources/">← Educational Leadership &amp; Research Resources</a>
   <span class="eyebrow">Learning Beyond the Classroom</span>
   <h1>Museums &amp; Informal Learning,<br>how we learn across a lifetime.</h1>
   <p class="lead">An interactive, graduate-level resource on free-choice learning — the science- and identity-driven learning that happens in museums, science centers, zoos, libraries, parks, and media. It covers the Contextual Model of Learning, the six strands of informal science learning, visitor identity and motivation, exhibit and program design, and how the field evaluates outcomes that classrooms never see.</p>
@@ -286,16 +96,16 @@
         <li><b>Social &amp; contextual</b> — shaped by companions and setting</li>
         <li><b>Cumulative &amp; lifelong</b> — built across many visits and years</li>
       </ul>
-      <div class="callout" style="margin:14px 0 0"><b>The lifelong-learning point:</b> Falk and Dierking estimate people spend only a few percent of their lives in formal schooling. The overwhelming share of what anyone knows about science, history, and the world is learned in free-choice settings across a lifetime.</div></div>
+      <div class="callout lr-s1"><b>The lifelong-learning point:</b> Falk and Dierking estimate people spend only a few percent of their lives in formal schooling. The overwhelming share of what anyone knows about science, history, and the world is learned in free-choice settings across a lifetime.</div></div>
     <div class="card"><h3>Formal, non-formal, and informal — the honest contrast</h3>
-      <div class="tbl-wrap"><table>
-        <tr><th>Dimension</th><th>Formal</th><th>Non-formal</th><th>Informal</th></tr>
+      <div class="tbl-wrap"><table><tbody>
+        <tr><th scope="row">Dimension</th><th scope="row">Formal</th><th scope="row">Non-formal</th><th scope="row">Informal</th></tr>
         <tr><td><b>Setting</b></td><td>School / university</td><td>Structured programs out of school</td><td>Everyday &amp; free-choice settings</td></tr>
         <tr><td><b>Structure</b></td><td>Curriculum, sequenced</td><td>Organized but flexible</td><td>Unstructured, emergent</td></tr>
         <tr><td><b>Choice</b></td><td>Compulsory</td><td>Voluntary, guided</td><td>Fully free-choice</td></tr>
         <tr><td><b>Assessment</b></td><td>Graded, credentialed</td><td>Sometimes certified</td><td>Rarely assessed</td></tr>
         <tr><td><b>Example</b></td><td>A biology class</td><td>An after-school STEM club</td><td>A museum visit</td></tr>
-      </table></div></div>
+      </tbody></table></div></div>
   </div>
   <div class="callout"><b>The boundaries are porous.</b> A field trip is a formal purpose enacted in an informal setting; a maker club is non-formal; a family's weekend at a science center is informal. Most learning ecosystems blend all three — the value is in how the settings connect across a learner's life.</div>
 </div></section>
@@ -365,17 +175,17 @@
   <div class="sec-head"><span class="eyebrow">Interactive · Falk's visitor identities</span><h2>The visitor identity explorer</h2>
     <p class="lead">In <em>Identity and the Museum Visitor Experience</em>, John Falk argues that visitors arrive with identity-related motivations that shape what they do and what they take away. Select a motivation to see how that visitor behaves — and how you would design for them.</p></div>
   <div class="tabs" id="idtabs">
-    <button class="tab active" data-p="explorer">Explorer</button>
-    <button class="tab" data-p="facilitator">Facilitator</button>
-    <button class="tab" data-p="professional">Professional / Hobbyist</button>
-    <button class="tab" data-p="experience">Experience Seeker</button>
-    <button class="tab" data-p="recharger">Recharger</button>
+    <button type="button" class="tab active" data-p="explorer">Explorer</button>
+    <button type="button" class="tab" data-p="facilitator">Facilitator</button>
+    <button type="button" class="tab" data-p="professional">Professional / Hobbyist</button>
+    <button type="button" class="tab" data-p="experience">Experience Seeker</button>
+    <button type="button" class="tab" data-p="recharger">Recharger</button>
   </div>
 
   <div class="panel active" id="explorer"><div class="panel-grid">
     <div class="card"><h3>The Explorer</h3>
       <p>Driven by personal <b>curiosity</b> and interest. Explorers come to be intellectually stimulated by whatever catches their attention and expect the museum to feed a general love of discovery. They roam, follow their nose, and want to find something new.</p>
-      <p class="kv" style="margin-top:12px"><b>They arrive asking:</b> "What's interesting here that I don't already know?"</p>
+      <p class="kv lr-s2"><b>They arrive asking:</b> "What's interesting here that I don't already know?"</p>
       <div class="scholars"><span class="chip">Curiosity-led</span><span class="chip">Self-directed</span></div></div>
     <ul class="facts">
       <li><span>Core motivation</span><span>Personal curiosity &amp; interest</span></li>
@@ -388,7 +198,7 @@
   <div class="panel" id="facilitator"><div class="panel-grid">
     <div class="card"><h3>The Facilitator</h3>
       <p>Socially motivated — their visit is <b>about someone else</b>. Parents, grandparents, teachers, and friends who come primarily to enable the learning and enjoyment of the people they brought. Their own satisfaction depends on their companions having a good experience.</p>
-      <p class="kv" style="margin-top:12px"><b>They arrive asking:</b> "Will my group — my kids, my guest — have a good time and learn?"</p>
+      <p class="kv lr-s2"><b>They arrive asking:</b> "Will my group — my kids, my guest — have a good time and learn?"</p>
       <div class="scholars"><span class="chip">Socially driven</span><span class="chip">Group-focused</span></div></div>
     <ul class="facts">
       <li><span>Core motivation</span><span>Enabling others' experience</span></li>
@@ -401,7 +211,7 @@
   <div class="panel" id="professional"><div class="panel-grid">
     <div class="card"><h3>The Professional / Hobbyist</h3>
       <p>Comes with a <b>specific, content-driven goal</b> tied to a profession or serious hobby. They feel a close tie between the institution's content and their own expertise or passion, and they visit to satisfy a particular objective rather than to browse.</p>
-      <p class="kv" style="margin-top:12px"><b>They arrive asking:</b> "Does this collection or exhibit deliver on the specific thing I came for?"</p>
+      <p class="kv lr-s2"><b>They arrive asking:</b> "Does this collection or exhibit deliver on the specific thing I came for?"</p>
       <div class="scholars"><span class="chip">Goal-directed</span><span class="chip">Expertise-tied</span></div></div>
     <ul class="facts">
       <li><span>Core motivation</span><span>A focused professional/hobby goal</span></li>
@@ -414,7 +224,7 @@
   <div class="panel" id="experience"><div class="panel-grid">
     <div class="card"><h3>The Experience Seeker</h3>
       <p>Motivated by the museum as a <b>destination</b>. They come to see the important place and its "must-see" objects — to have been there. Satisfaction comes from the icon, the landmark, and the sense of having experienced a significant site.</p>
-      <p class="kv" style="margin-top:12px"><b>They arrive asking:</b> "What are the iconic things I have to see here?"</p>
+      <p class="kv lr-s2"><b>They arrive asking:</b> "What are the iconic things I have to see here?"</p>
       <div class="scholars"><span class="chip">Destination-led</span><span class="chip">Icon-seeking</span></div></div>
     <ul class="facts">
       <li><span>Core motivation</span><span>Experiencing the place &amp; its icons</span></li>
@@ -427,7 +237,7 @@
   <div class="panel" id="recharger"><div class="panel-grid">
     <div class="card"><h3>The Recharger</h3>
       <p>Seeks a <b>contemplative, restorative</b> experience — spiritual, reflective, or simply a refuge from everyday life. The museum is a place to slow down, recharge, and reflect. Learning, if it comes, arrives through calm and immersion rather than activity.</p>
-      <p class="kv" style="margin-top:12px"><b>They arrive asking:</b> "Can I find a beautiful, peaceful space to reflect?"</p>
+      <p class="kv lr-s2"><b>They arrive asking:</b> "Can I find a beautiful, peaceful space to reflect?"</p>
       <div class="scholars"><span class="chip">Restorative</span><span class="chip">Reflective</span></div></div>
     <ul class="facts">
       <li><span>Core motivation</span><span>Contemplation &amp; renewal</span></li>
@@ -436,14 +246,14 @@
       <li><span>Avoid</span><span>Relentless stimulation with nowhere to pause</span></li>
     </ul>
   </div></div>
-  <div class="callout" style="margin-top:22px"><b>Identity is situational, not fixed.</b> The same person may be a Facilitator on a family Saturday and an Explorer alone on a weekday. Falk's point is that people enact a motivation <em>for this visit</em> — so designing for the full set, rather than an "average visitor," serves the real diversity of any audience.</div>
+  <div class="callout lr-s3"><b>Identity is situational, not fixed.</b> The same person may be a Facilitator on a family Saturday and an Explorer alone on a weekday. Falk's point is that people enact a motivation <em>for this visit</em> — so designing for the full set, rather than an "average visitor," serves the real diversity of any audience.</div>
 </div></section>
 
 <!-- DESIGNING EXHIBITS -->
 <section id="design"><div class="wrap">
   <div class="sec-head"><span class="eyebrow">Craft of the exhibit</span><h2>Designing exhibits &amp; experiences</h2>
     <p class="lead">Exhibit design is where learning theory becomes physical. The craft is to attract attention, hold it long enough for meaning to form, and offer layers of interpretation that reward both the passer-by and the deep-diver — while remaining accessible to everyone.</p></div>
-  <div class="grid g3" style="margin-bottom:20px">
+  <div class="grid g3 lr-s4">
     <div class="card hoverable"><span class="tag">Attract &amp; hold</span><h3>Hooks &amp; dwell time</h3>
       <p class="kv">Two behavioral measures dominate exhibit evaluation: <b>attracting power</b> (does it stop people?) and <b>holding power</b> (how long do they stay?). Dwell time is a proxy for engagement.</p></div>
     <div class="card hoverable"><span class="tag">Interactivity</span><h3>Active Prolonged Engagement</h3>
@@ -457,15 +267,15 @@
     <div class="card hoverable"><span class="tag">Labels</span><h3>Reading level &amp; length</h3>
       <p class="kv">Good labels are short, written well below the average adult reading level, active-voice, and visitor-centered. Serrell's research shaped label-writing as a discipline.</p></div>
   </div>
-  <div class="tbl-wrap"><table>
-    <tr><th>Design lever</th><th>What it does</th><th>Grounded in</th></tr>
+  <div class="tbl-wrap"><table><tbody>
+    <tr><th scope="row">Design lever</th><th scope="row">What it does</th><th scope="row">Grounded in</th></tr>
     <tr><td><b>Attracting power</b></td><td>Stops the visitor at the exhibit</td><td>Behavioral tracking &amp; timing studies</td></tr>
     <tr><td><b>Holding power / dwell time</b></td><td>Keeps them engaged long enough to learn</td><td>Exhibit evaluation research</td></tr>
     <tr><td><b>Active Prolonged Engagement</b></td><td>Turns interaction into investigation</td><td>Exploratorium (Humphrey &amp; Gutwill)</td></tr>
     <tr><td><b>Layered interpretation</b></td><td>Serves multiple audiences at once</td><td>Interpretive planning; Tilden</td></tr>
     <tr><td><b>Universal design</b></td><td>Removes barriers by default</td><td>UDL; accessibility standards</td></tr>
     <tr><td><b>Readable labels</b></td><td>Makes meaning quick to grasp</td><td>Serrell, <em>Exhibit Labels</em></td></tr>
-  </table></div>
+  </tbody></table></div>
 </div></section>
 
 <!-- SIGNATURE INTERACTIVE 2: DESIGN SELF-CHECK -->
@@ -486,7 +296,7 @@
   <div class="score">
     <div class="kv">Estimated design coverage</div>
     <div class="meter"><div class="fill" id="designFill"></div></div>
-    <div class="verdict" id="designVerdict" style="color:var(--muted)">Select qualities to score your design</div>
+    <div class="verdict lr-s5" id="designVerdict">Select qualities to score your design</div>
   </div>
 </div></section>
 
@@ -494,7 +304,7 @@
 <section id="facilitation"><div class="wrap">
   <div class="sec-head"><span class="eyebrow">People, not just objects</span><h2>Facilitation &amp; programs</h2>
     <p class="lead">Exhibits rarely teach alone. Docents, explainers, and educators mediate the experience, and the strongest learning often happens in the conversation an exhibit sparks. Programs — especially school field trips — need deliberate structure to pay off.</p></div>
-  <div class="grid g2" style="margin-bottom:20px">
+  <div class="grid g2 lr-s4">
     <div class="card"><h3>Docents, explainers &amp; gallery teaching</h3>
       <ul>
         <li><b>Facilitators, not lecturers</b> — the best explainers ask questions and follow the visitor's curiosity</li>
@@ -511,7 +321,7 @@
       </ul></div>
   </div>
   <div class="card"><h3>Family &amp; intergenerational learning</h3>
-    <p class="kv" style="margin-top:4px">Most museum visitors come in social groups, and families learn <em>together</em>. Parents scaffold, connect exhibits to shared history, and model curiosity; children drive the agenda. Designing for the group — shared sightlines, conversation prompts, multi-age tasks — supports the sociocultural context where much free-choice learning actually occurs.</p>
+    <p class="kv lr-s6">Most museum visitors come in social groups, and families learn <em>together</em>. Parents scaffold, connect exhibits to shared history, and model curiosity; children drive the agenda. Designing for the group — shared sightlines, conversation prompts, multi-age tasks — supports the sociocultural context where much free-choice learning actually occurs.</p>
   </div>
 </div></section>
 
@@ -551,32 +361,32 @@
 <section id="glossary"><div class="wrap">
   <div class="sec-head"><span class="eyebrow">Reference</span><h2>Core vocabulary &amp; references</h2></div>
   <div class="grid g2">
-    <div class="card"><ul style="list-style:none;padding:0;margin:0">
-      <li style="padding:9px 0;border-bottom:1px solid var(--line)"><b style="color:var(--ink)">Free-choice learning</b> — self-directed learning driven by the learner's own interests, choice, and control.</li>
-      <li style="padding:9px 0;border-bottom:1px solid var(--line)"><b style="color:var(--ink)">Contextual Model of Learning</b> — Falk &amp; Dierking's account of learning as personal, sociocultural, and physical contexts interacting over time.</li>
-      <li style="padding:9px 0;border-bottom:1px solid var(--line)"><b style="color:var(--ink)">Six strands</b> — the NRC's framework for the intertwined outcomes of informal science learning.</li>
-      <li style="padding:9px 0"><b style="color:var(--ink)">Visitor identity</b> — the identity-related motivation a visitor enacts for a given visit (Falk).</li>
+    <div class="card"><ul class="lr-s7">
+      <li class="lr-s8"><b class="lr-s9">Free-choice learning</b> — self-directed learning driven by the learner's own interests, choice, and control.</li>
+      <li class="lr-s8"><b class="lr-s9">Contextual Model of Learning</b> — Falk &amp; Dierking's account of learning as personal, sociocultural, and physical contexts interacting over time.</li>
+      <li class="lr-s8"><b class="lr-s9">Six strands</b> — the NRC's framework for the intertwined outcomes of informal science learning.</li>
+      <li class="lr-s10"><b class="lr-s9">Visitor identity</b> — the identity-related motivation a visitor enacts for a given visit (Falk).</li>
     </ul></div>
-    <div class="card"><ul style="list-style:none;padding:0;margin:0">
-      <li style="padding:9px 0;border-bottom:1px solid var(--line)"><b style="color:var(--ink)">Attracting / holding power</b> — behavioral measures of whether an exhibit stops visitors and how long it keeps them.</li>
-      <li style="padding:9px 0;border-bottom:1px solid var(--line)"><b style="color:var(--ink)">Active Prolonged Engagement (APE)</b> — open-ended exhibit design that turns interaction into visitor-led investigation.</li>
-      <li style="padding:9px 0;border-bottom:1px solid var(--line)"><b style="color:var(--ink)">Interpretation</b> — Tilden's art of revealing meaning and provoking, not merely presenting facts.</li>
-      <li style="padding:9px 0"><b style="color:var(--ink)">Layered interpretation</b> — stacking content so multiple audiences each find value in one exhibit.</li>
+    <div class="card"><ul class="lr-s7">
+      <li class="lr-s8"><b class="lr-s9">Attracting / holding power</b> — behavioral measures of whether an exhibit stops visitors and how long it keeps them.</li>
+      <li class="lr-s8"><b class="lr-s9">Active Prolonged Engagement (APE)</b> — open-ended exhibit design that turns interaction into visitor-led investigation.</li>
+      <li class="lr-s8"><b class="lr-s9">Interpretation</b> — Tilden's art of revealing meaning and provoking, not merely presenting facts.</li>
+      <li class="lr-s10"><b class="lr-s9">Layered interpretation</b> — stacking content so multiple audiences each find value in one exhibit.</li>
     </ul></div>
-    <div class="card"><ul style="list-style:none;padding:0;margin:0">
-      <li style="padding:9px 0;border-bottom:1px solid var(--line)"><b style="color:var(--ink)">Front-end / formative / summative</b> — evaluation before, during, and after design and installation.</li>
-      <li style="padding:9px 0;border-bottom:1px solid var(--line)"><b style="color:var(--ink)">Timing &amp; tracking</b> — mapping visitor movement and dwell as engagement proxies.</li>
-      <li style="padding:9px 0;border-bottom:1px solid var(--line)"><b style="color:var(--ink)">Personal Meaning Mapping</b> — an open method for capturing how individuals' meaning changes through an experience.</li>
-      <li style="padding:9px 0"><b style="color:var(--ink)">Emic / etic</b> — the participant's vs. the analyst's perspective, useful in visitor studies.</li>
+    <div class="card"><ul class="lr-s7">
+      <li class="lr-s8"><b class="lr-s9">Front-end / formative / summative</b> — evaluation before, during, and after design and installation.</li>
+      <li class="lr-s8"><b class="lr-s9">Timing &amp; tracking</b> — mapping visitor movement and dwell as engagement proxies.</li>
+      <li class="lr-s8"><b class="lr-s9">Personal Meaning Mapping</b> — an open method for capturing how individuals' meaning changes through an experience.</li>
+      <li class="lr-s10"><b class="lr-s9">Emic / etic</b> — the participant's vs. the analyst's perspective, useful in visitor studies.</li>
     </ul></div>
-    <div class="card"><ul style="list-style:none;padding:0;margin:0">
-      <li style="padding:9px 0;border-bottom:1px solid var(--line)"><b style="color:var(--ink)">Participatory museum</b> — Simon's model of visitors as contributors and co-creators, not passive audiences.</li>
-      <li style="padding:9px 0;border-bottom:1px solid var(--line)"><b style="color:var(--ink)">Novelty effect</b> — how an unfamiliar setting can crowd out learning if visitors aren't oriented.</li>
-      <li style="padding:9px 0;border-bottom:1px solid var(--line)"><b style="color:var(--ink)">Learning ecosystem</b> — the connected web of settings a learner moves through across a lifetime.</li>
-      <li style="padding:9px 0"><b style="color:var(--ink)">Advance organizer</b> — orientation that primes visitors for what they are about to experience.</li>
+    <div class="card"><ul class="lr-s7">
+      <li class="lr-s8"><b class="lr-s9">Participatory museum</b> — Simon's model of visitors as contributors and co-creators, not passive audiences.</li>
+      <li class="lr-s8"><b class="lr-s9">Novelty effect</b> — how an unfamiliar setting can crowd out learning if visitors aren't oriented.</li>
+      <li class="lr-s8"><b class="lr-s9">Learning ecosystem</b> — the connected web of settings a learner moves through across a lifetime.</li>
+      <li class="lr-s10"><b class="lr-s9">Advance organizer</b> — orientation that primes visitors for what they are about to experience.</li>
     </ul></div>
   </div>
-  <div class="card" style="margin-top:18px"><h3>Foundational scholars &amp; further reading</h3>
+  <div class="card lr-s11"><h3>Foundational scholars &amp; further reading</h3>
     <div class="scholars">
       <span class="chip">Falk &amp; Dierking — <em>The Museum Experience</em></span>
       <span class="chip">Falk &amp; Dierking — <em>Learning from Museums</em></span>
@@ -590,81 +400,20 @@
       <span class="chip">Humphrey &amp; Gutwill — <em>Fostering Active Prolonged Engagement</em></span>
     </div></div>
 </div></section>
+</main>
 
 <footer><div class="wrap">
   <div class="foot-name">Freddrick Logan</div>
   <div class="foot-title">Museums &amp; Informal Learning</div>
   <nav class="foot-links" aria-label="Footer">
     <a href="https://fredlogan.phd">fredlogan.phd</a> &middot;
-    <a href="../resources/">Resource hub</a> &middot;
+    <a href="https://freddricklogan.github.io/resources/">Resource hub</a> &middot;
     <a href="https://github.com/Freddricklogan">GitHub</a> &middot;
     <a href="https://www.linkedin.com/in/freddricklogan/">LinkedIn</a>
   </nav>
   <div class="copyright">&copy; 2026 Freddrick Logan &mdash; Technologist &amp; Education. All rights reserved.</div>
 </div></footer>
 
-<script>
-// ---- Tabs: visitor identity explorer ----
-document.querySelectorAll('#idtabs .tab').forEach(t=>{
-  t.onclick=()=>{
-    document.querySelectorAll('#idtabs .tab').forEach(x=>x.classList.remove('active'));
-    document.querySelectorAll('#identity .panel').forEach(p=>p.classList.remove('active'));
-    t.classList.add('active');
-    document.getElementById(t.dataset.p).classList.add('active');
-  };
-});
-
-// ---- Exhibit design self-check scorer ----
-const cks=document.querySelectorAll('#checklist .ck');
-function scoreDesign(){
-  let s=0; cks.forEach(c=>{ if(c.classList.contains('on')) s+=parseInt(c.dataset.w,10); });
-  s=Math.min(100,s);
-  document.getElementById('designFill').style.width=s+'%';
-  const v=document.getElementById('designVerdict');
-  if(s===0){v.textContent='Select qualities to score your design';v.style.color='var(--muted)';}
-  else if(s<35){v.textContent=s+'% — Emerging: add a clear hook & genuine interactivity';v.style.color='var(--bad)';}
-  else if(s<70){v.textContent=s+'% — Solid: strengthen layering, access & social use';v.style.color='var(--warn)';}
-  else{v.textContent=s+'% — Strong: engaging, accessible & tested with real visitors';v.style.color='var(--good)';}
-}
-cks.forEach(c=>c.onclick=()=>{c.classList.toggle('on');scoreDesign();});
-scoreDesign();
-</script>
-<script>
-(function(){
-  if(document.querySelector('.sec-head.sect-toggle')) return;
-  var firstCollapsible=null;
-  [].slice.call(document.querySelectorAll('section')).forEach(function(sec){
-    var wrap=sec.querySelector('.wrap'); if(!wrap) return;
-    var head=wrap.querySelector('.sec-head'); if(!head) return;
-    if(wrap.querySelector('.memo-head')||wrap.querySelector('.exec-summary')) return;
-    var body=document.createElement('div'); body.className='sect-body';
-    var n=head.nextSibling;
-    while(n){ var nx=n.nextSibling; body.appendChild(n); n=nx; }
-    wrap.appendChild(body);
-    head.classList.add('sect-toggle');
-    head.setAttribute('role','button'); head.setAttribute('tabindex','0'); head.setAttribute('aria-expanded','false');
-    sec.classList.add('collapsed');
-    if(!firstCollapsible) firstCollapsible=sec;
-    function set(open){ sec.classList[open?'remove':'add']('collapsed'); head.setAttribute('aria-expanded',open?'true':'false'); }
-    head.addEventListener('click',function(){ set(sec.classList.contains('collapsed')); });
-    head.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); set(sec.classList.contains('collapsed')); } });
-  });
-  function openHash(){ var id=decodeURIComponent((location.hash||'').slice(1)); if(!id) return; var el=document.getElementById(id); if(!el) return; var s=el.closest?el.closest('section'):null; if(s&&s.classList.contains('collapsed')){ s.classList.remove('collapsed'); var h=s.querySelector('.sec-head.sect-toggle'); if(h)h.setAttribute('aria-expanded','true'); } setTimeout(function(){ try{el.scrollIntoView({behavior:'smooth',block:'start'});}catch(e){el.scrollIntoView();} },40); }
-  window.addEventListener('hashchange',openHash);
-  if(firstCollapsible){
-    var bar=document.createElement('div'); bar.className='expand-bar';
-    var btn=document.createElement('button'); btn.type='button'; btn.textContent='Expand all sections'; btn.setAttribute('aria-expanded','false');
-    var expanded=false;
-    btn.addEventListener('click',function(){
-      expanded=!expanded;
-      document.querySelectorAll('section').forEach(function(s){ var h=s.querySelector('.sec-head.sect-toggle'); if(!h) return; s.classList[expanded?'remove':'add']('collapsed'); h.setAttribute('aria-expanded',expanded?'true':'false'); });
-      btn.textContent=expanded?'Collapse all sections':'Expand all sections'; btn.setAttribute('aria-expanded',expanded?'true':'false');
-    });
-    bar.appendChild(btn);
-    firstCollapsible.parentNode.insertBefore(bar, firstCollapsible);
-  }
-  openHash();
-})();
-</script>
+<script type="module" src="src/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,54 @@
+{
+  "title": "Museums & Informal Learning",
+  "subtitle": "a graduate-level guide to free-choice learning in museums, science centres and beyond, with a visitor identity explorer and an exhibit design self-check",
+  "problem": "Museum educators, exhibit developers, science-centre programme staff and the graduate students who join them design for 'the visitor' as if one existed, measure success by attendance, and evaluate — if at all — after opening. The research on free-choice learning is mature; its frameworks rarely reach the gallery floor in a form a team can design against.",
+  "solution": "An eleven-section resource that defines informal learning and the ecosystem it happens in, sets out Falk and Dierking's Contextual Model and the NRC's six strands, opens Falk's five visitor identities in an explorer that shows how each visitor behaves and how to design for them, treats exhibit design as attracting and holding attention with layered interpretation and Active Prolonged Engagement, covers facilitation and school programmes, the front-end, formative and summative evaluation cycle, and equity and community co-creation — with a design self-check that scores an exhibit against research-linked qualities.",
+  "pedagogy": "design against the visitor, not the object: the identity explorer pairs each motivation with behaviour and design implications; the self-check is presented as a heuristic rather than a rubric to game; evaluation is framed as part of design rather than an afterthought.",
+  "section_titles": [
+    "what informal learning is",
+    "where it happens",
+    "Contextual Model of Learning",
+    "six strands",
+    "visitor identity explorer",
+    "designing exhibits",
+    "design self-check",
+    "facilitation and programmes",
+    "evaluation",
+    "equity and community",
+    "glossary"
+  ],
+  "widgets": [
+    {
+      "name": "Visitor identity explorer",
+      "what": "Five tabs — Explorer, Facilitator, Professional/Hobbyist, Experience Seeker, Recharger — each with the visitor's motivation, behaviour and design implications"
+    },
+    {
+      "name": "Exhibit design self-check",
+      "what": "Weighted checklist of research-linked qualities — clear hook, multiple entry points, genuine interactivity and more — with a bar and an Emerging / Developing / Strong verdict"
+    }
+  ],
+  "quiz_topics": [
+    "free choice as the defining feature",
+    "the three contexts of the Contextual Model",
+    "Falk's Facilitator identity",
+    "attracting and holding power",
+    "front-end, formative and summative evaluation"
+  ],
+  "tour": [
+    "the first section opens and the count rises.",
+    "free choice, the Contextual Model, visitor identities, exhibit measures and evaluation"
+  ],
+  "repo": "museums-informal-learning",
+  "tests": 7,
+  "cov_all": 79.84,
+  "cov_kit": 78.75,
+  "vars": 26,
+  "inline_styles": 48,
+  "style_classes": 11,
+  "buttons": 5,
+  "tables": 2,
+  "main_note": "wrapped the content in a `<main>` landmark",
+  "sections": 11,
+  "words": 2768,
+  "reading_min": 13
+}
