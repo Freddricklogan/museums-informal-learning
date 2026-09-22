@@ -3,6 +3,7 @@ export const config = {
   title: 'Museums & Informal Learning',
   tagline: 'A graduate-level guide to learning in free-choice settings — museums, science centres, zoos, libraries and media: the Contextual Model of Learning, the NRC’s six strands, Falk’s visitor identities, exhibit design, facilitation, evaluation and equity, with a visitor identity explorer and an exhibit design self-check.',
   repo: 'https://github.com/Freddricklogan/museums-informal-learning',
+  theme: 'plum',
   pagesUrl: 'https://freddricklogan.github.io/museums-informal-learning/',
   quizTitle: 'Five questions on informal learning',
   quiz: [
